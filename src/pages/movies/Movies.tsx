@@ -41,7 +41,7 @@ function Movies() {
     return <div className="container mx-auto">
         <div className="d-flex justify-content-between mb-3">
             <h2>Movie Page</h2>
-            <NavLink to="/add-movie" className="btn btn-warning">Add Movie</NavLink>
+            <NavLink to="/movies/add-movie" className="btn btn-warning">Add Movie</NavLink>
         </div>
         <div>
             <table className="table table-striped">
