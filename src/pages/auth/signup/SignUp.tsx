@@ -1,6 +1,7 @@
 import { useState, type ChangeEvent, type FormEvent } from "react"
 import { Button, Form } from "react-bootstrap"
 import ApiClient from "../../../utils/ApiClient"
+import { NavLink } from "react-router"
 
 
 interface SignUpForm{
@@ -70,6 +71,7 @@ const onSubmit = async (event : FormEvent<HTMLFormElement>) => {
             </Form.Group>
             <br></br>
             <Button type="submit" variant="primary" >Simpan</Button>
+            <NavLink to="/signin">Sign In</NavLink>
         </Form>
     </div>
 }
